@@ -1,0 +1,73 @@
+{
+  "frozen_rule": {
+    "tau_conv": 0.4,
+    "tau_adv": 0.48,
+    "tau_dep": 0.35,
+    "train_f1": 1.0,
+    "sha256_freeze_hash": "13fb25045acae1661e2d50ec458c894bfc08221f90bfabff7bdd659bf892d302"
+  },
+  "test_split_results": [
+    {
+      "detector": "1. Conversation Only (E_conv >= tau)",
+      "Accuracy": 0.4,
+      "Precision": 0.2778,
+      "Recall": 0.5,
+      "F1": 0.3571,
+      "FPR_Case2_CommonIncentives": 0.3,
+      "FPR_Case3_CheapTalk": 1.0
+    },
+    {
+      "detector": "2. Coalition Advantage Only (E_adv >= tau)",
+      "Accuracy": 0.7667,
+      "Precision": 0.5882,
+      "Recall": 1.0,
+      "F1": 0.7407,
+      "FPR_Case2_CommonIncentives": 0.7,
+      "FPR_Case3_CheapTalk": 0.0
+    },
+    {
+      "detector": "3. Dependence Only (E_dep >= tau)",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "FPR_Case2_CommonIncentives": 0.0,
+      "FPR_Case3_CheapTalk": 0.0
+    },
+    {
+      "detector": "4. Strict 3-Way AND (E_conv & E_adv & E_dep)",
+      "Accuracy": 0.8333,
+      "Precision": 1.0,
+      "Recall": 0.5,
+      "F1": 0.6667,
+      "FPR_Case2_CommonIncentives": 0.0,
+      "FPR_Case3_CheapTalk": 0.0
+    },
+    {
+      "detector": "5. Frozen Tripartite Rule (Ours: Overt + Covert Paths)",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1": 1.0,
+      "FPR_Case2_CommonIncentives": 0.0,
+      "FPR_Case3_CheapTalk": 0.0
+    }
+  ],
+  "pillar_means_all_60": {
+    "Case_1": {
+      "mean_E_conv": 0.4,
+      "mean_E_adv": 0.794,
+      "mean_E_dep": 0.741
+    },
+    "Case_2": {
+      "mean_E_conv": 0.47,
+      "mean_E_adv": 0.576,
+      "mean_E_dep": 0.114
+    },
+    "Case_3": {
+      "mean_E_conv": 0.87,
+      "mean_E_adv": 0.331,
+      "mean_E_dep": 0.137
+    }
+  }
+}

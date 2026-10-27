@@ -1,0 +1,7 @@
+{
+  "tau_conv": 0.4,
+  "tau_adv": 0.5,
+  "tau_dep": 0.4,
+  "train_f1": 1.0,
+  "sha256_freeze_hash": "8d1b12041adb7233ce6c189988c57296bf0f5d51456ece7f882aaaa2debfa79b"
+}
